@@ -32,9 +32,9 @@ return {
         side_padding = 1,
         scrollbar = false,
       }
-      
+
       opts.window.completion = cmp.config.window.bordered(borderstyle)
-      opts.window.documentation = cmp.config.window.bordered(borderstyle) 
+      opts.window.documentation = cmp.config.window.bordered(borderstyle)
 
       return opts
     end

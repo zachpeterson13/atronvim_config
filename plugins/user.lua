@@ -9,5 +9,14 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-    "nvim-treesitter/nvim-treesitter-context"
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        lazy = false
+    },
+    {
+        "rcarriga/nvim-notify",
+        opts = {
+            background_colour = "#000000"
+        }
+    }
 }

@@ -18,6 +18,8 @@ return {
     scrolloff = 8,
 
     colorcolumn = "80",
+
+    showtabline = 0,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

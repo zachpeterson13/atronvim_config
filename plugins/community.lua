@@ -6,6 +6,8 @@ return {
 
   { import = "astrocommunity.colorscheme.oxocarbon-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.rose-pine" },
+
   { import = "astrocommunity.utility.transparent-nvim" },
 
   { import = "astrocommunity.pack.rust" },
@@ -15,5 +17,9 @@ return {
   { import = "astrocommunity.pack.clojure" },
 
   { import = "astrocommunity.motion.harpoon" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.motion.nvim-surround" },
+
+  { import = "astrocommunity.editing-support.treesj" },
+
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
