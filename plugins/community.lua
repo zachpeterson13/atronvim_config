@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.clojure" },
 
   { import = "astrocommunity.motion.harpoon" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
