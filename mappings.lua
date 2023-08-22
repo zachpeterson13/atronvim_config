@@ -27,11 +27,32 @@ return {
       end,
       desc = "Pick to close",
     },
+
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    ["<leader><leader>j"] = {
+      function() require("harpoon.ui").nav_file(1) end,
+      desc = "Harpoon file 1"
+    },
+
+    ["<leader><leader>k"] = {
+      function() require("harpoon.ui").nav_file(2) end,
+      desc = "Harpoon file 2"
+    },
+
+    ["<leader><leader>l"] = {
+      function() require("harpoon.ui").nav_file(3) end,
+      desc = "Harpoon file 3"
+    },
+
+    ["<leader><leader>;"] = {
+      function() require("harpoon.ui").nav_file(4) end,
+      desc = "Harpoon file 4"
+    },
   },
   t = {
     -- setting a mapping to false will disable it

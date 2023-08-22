@@ -20,6 +20,36 @@ return {
       return opts
     end,
   },
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      local cmp = require "cmp"
+
+      local borderstyle = {
+        border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+        -- winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+        -- winhighlight = "Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel",
+        side_padding = 1,
+        scrollbar = false,
+      }
+      
+      opts.window.completion = cmp.config.window.bordered(borderstyle)
+      opts.window.documentation = cmp.config.window.bordered(borderstyle) 
+
+      return opts
+    end
+    -- config = function ()
+    --   local cmp = require("cmp")
+    --
+    --
+    -- cmp.setup({
+    --   window = {
+    --     completion = borderstyle,
+    --     documentation = borderstyle,
+    --   },
+    -- })
+    -- end
+  }
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
